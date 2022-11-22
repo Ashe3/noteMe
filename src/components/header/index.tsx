@@ -6,10 +6,10 @@ interface Props {}
 
 const Header: React.FC<Props> = () => {
   return (
-    <div css={styles}>
+    <header css={styles}>
       <Logo />
       <Nav />
-    </div>
+    </header>
   );
 };
 
