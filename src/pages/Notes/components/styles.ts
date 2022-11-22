@@ -6,6 +6,7 @@ export const sidebarStyles = (isShow: boolean) => css`
   height: 100%;
   display: flex;
   padding: 40px 20px;
+  top: 0;
 
   ${isShow
     ? css`
@@ -18,4 +19,19 @@ export const sidebarStyles = (isShow: boolean) => css`
       `};
 
   transition: width 0.5s linear;
+`;
+
+export const notesContainerStyles = css`
+  padding: 30px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  div {
+    width: 200px;
+    height: 200px;
+    background: lightgrey;
+    margin: 20px;
+  }
 `;
