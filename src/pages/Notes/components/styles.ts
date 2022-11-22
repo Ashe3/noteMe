@@ -1,0 +1,21 @@
+import { css } from '@emotion/react';
+
+export const sidebarStyles = (isShow: boolean) => css`
+  background: lightgreen;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  padding: 40px 20px;
+
+  ${isShow
+    ? css`
+        width: 300px;
+        right: 0;
+      `
+    : css`
+        width: 0;
+        right: -40px;
+      `};
+
+  transition: width 0.5s linear;
+`;
