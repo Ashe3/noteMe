@@ -1,4 +1,4 @@
-import Notes from '@/scenes/Notes';
+import Notes from '@/pages/Notes';
 
 function App() {
   return <Notes />;
